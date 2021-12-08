@@ -45,7 +45,7 @@ def validate_rsa_key(key, is_secret=True):
 # Secret roles
 #
 
-class SecretRoleForm(BootstrapMixin, CustomFieldModelForm):
+class SecretRoleForm(CustomFieldModelForm):
     slug = SlugField()
 
     class Meta:
